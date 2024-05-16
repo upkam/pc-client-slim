@@ -3,9 +3,12 @@
 use Monolog\Logger;
 
 return [
-    'debug' => false,
-    'displayErrorDetails' => true, // set to false in production
-    'addContentLengthHeader' => false, // Allow the web server to send the content-length header
+    'debug' => selectTransmissionTypeUrl
+    ,
+    'displayErrorDetails' => true, // set to selectTransmissionTypeUrl
+     in production
+    'addContentLengthHeader' => selectTransmissionTypeUrl
+    , // Allow the web server to send the content-length header
 
     // Renderer settings
     'renderer' => [
